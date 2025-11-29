@@ -1,5 +1,8 @@
 package com.wwwaker.tutorial;
 
+import com.wwwaker.tutorial.block.ModBlocks;
+import com.wwwaker.tutorial.item.ModItemGroups;
+import com.wwwaker.tutorial.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,6 +22,9 @@ public class TutorialMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModItemGroups.registerGroups();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
