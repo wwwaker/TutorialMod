@@ -2,7 +2,6 @@ package com.wwwaker.tutorial.item;
 
 import com.wwwaker.tutorial.TutorialMod;
 import com.wwwaker.tutorial.block.ModBlocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -12,14 +11,13 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Nullables;
 
 public class ModItemGroups {
     public static final RegistryKey<ItemGroup> TUTORIAL_GROUP = registry("tutorial_group");
 
     private static RegistryKey<ItemGroup> registry(String id){
         return RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(TutorialMod.MOD_ID, id));
-    };
+    }
 
     public static final ItemGroup TUTORIAL_GROUP2 = Registry.register(
             Registries.ITEM_GROUP,

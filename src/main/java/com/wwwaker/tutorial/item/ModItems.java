@@ -1,7 +1,6 @@
 package com.wwwaker.tutorial.item;
 
 import com.wwwaker.tutorial.TutorialMod;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.BlockItem;
