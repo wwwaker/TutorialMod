@@ -1,7 +1,10 @@
 package com.wwwaker.tutorial.dategen;
 
+import com.wwwaker.tutorial.item.ModItems;
+import com.wwwaker.tutorial.tag.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -13,6 +16,9 @@ public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-//        getOrCreateTagBuilder();
+        getOrCreateTagBuilder(ModItemTags.SUGAR_INGREDIENTS)
+                .add(ModItems.CHEESE)
+                .add(ModItems.STRAWBERRY)
+                .add(Items.BEETROOT);
     }
 }
