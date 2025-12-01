@@ -23,5 +23,10 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModItemGroups.TUTORIAL_GROUP, "Tutorial Group");
         translationBuilder.add("itemGroup.tutorial-group2", "Tutorial Group2");
+
+        translationBuilder.add(ModItems.CORN, "Corn");
+        translationBuilder.add(ModItems.STRAWBERRY,"Strawberry");
+        translationBuilder.add(ModItems.CHEESE,"Cheese");
+
     }
 }
