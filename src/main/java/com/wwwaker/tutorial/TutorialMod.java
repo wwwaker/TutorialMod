@@ -5,6 +5,7 @@ import com.wwwaker.tutorial.item.ModItemGroups;
 import com.wwwaker.tutorial.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,6 +26,9 @@ public class TutorialMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerGroups();
+
+//		FuelRegistry.INSTANCE.add(ModItems.ANTHRACITE, 1600);
+
 		LOGGER.info("Hello Fabric world!");
 	}
 }

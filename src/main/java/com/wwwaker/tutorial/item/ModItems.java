@@ -21,6 +21,7 @@ public class ModItems {
     public static final Item STRAWBERRY = registerItem("strawberry", new Item(new Item.Settings().food(ModFoodComponents.STRAWBERRY)));
     public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
 
+    public static final Item ANTHRACITE = registerItem("anthracite", new Item(new Item.Settings()));
 
     public static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM, RegistryKey.of(Registries.ITEM.getKey(), new Identifier(TutorialMod.MOD_ID, id)), item);
