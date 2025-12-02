@@ -31,5 +31,12 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider{
                 .forceAddTag(BlockTags.GOLD_ORES)
                 .forceAddTag(BlockTags.LAPIS_ORES)
                 .forceAddTag(BlockTags.REDSTONE_ORES);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.ICE_ETHER_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.ICE_ETHER_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.ICE_ETHER_WALL);
     }
 }
