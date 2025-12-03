@@ -1,6 +1,7 @@
 package com.wwwaker.tutorial.item;
 
 import com.wwwaker.tutorial.TutorialMod;
+import com.wwwaker.tutorial.item.custom.PickaxeAxeItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -27,6 +28,8 @@ public class ModItems {
     public static final Item FIRE_ETHER_PICKAXE = registerItems("fire_ether_pickaxe", new PickaxeItem(ModToolMaterials.FIRE_ETHER, 1, -2.0F, new Item.Settings()));
     public static final Item FIRE_ETHER_AXE = registerItems("fire_ether_axe", new AxeItem(ModToolMaterials.FIRE_ETHER, 5, -2.4F, new Item.Settings()));
     public static final Item FIRE_ETHER_HOE = registerItems("fire_ether_hoe", new HoeItem(ModToolMaterials.FIRE_ETHER, -1, 0.0F, new Item.Settings()));
+
+    public static final Item FIRE_ETHER_PICKAXE_AXE = registerItems("fire_ether_pickaxe_axe", new PickaxeAxeItem(ModToolMaterials.FIRE_ETHER, 3, -3.0F, new Item.Settings()));
 
     public static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM, RegistryKey.of(Registries.ITEM.getKey(), new Identifier(TutorialMod.MOD_ID, id)), item);

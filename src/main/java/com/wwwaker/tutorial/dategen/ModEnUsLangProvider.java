@@ -37,6 +37,7 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.FIRE_ETHER_PICKAXE, "Fire Ether Pickaxe");
         translationBuilder.add(ModItems.FIRE_ETHER_AXE, "Fire Ether Axe");
         translationBuilder.add(ModItems.FIRE_ETHER_HOE, "Fire Ether Hoe");
+        translationBuilder.add(ModItems.FIRE_ETHER_PICKAXE_AXE, "Fire Ether Pickaxe Axe");
 
         translationBuilder.add(ModItemGroups.TUTORIAL_GROUP, "Tutorial Group");
         translationBuilder.add("itemGroup.tutorial_group2", "Tutorial Group2");

@@ -46,5 +46,6 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FIRE_ETHER_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.FIRE_ETHER_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.FIRE_ETHER_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FIRE_ETHER_PICKAXE_AXE, Models.HANDHELD);
     }
 }

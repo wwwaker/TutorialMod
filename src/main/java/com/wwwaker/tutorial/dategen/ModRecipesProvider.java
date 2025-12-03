@@ -13,7 +13,6 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeSerializer;
-import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
@@ -98,7 +97,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
-                .criterion("has_iron_ingot", conditionsFromItem(ModItems.FIRE_ETHER))
+                .criterion(hasItem(ModBlocks.ICE_ETHER_BLOCK), conditionsFromItem(ModItems.FIRE_ETHER))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_SHOVEL)
                 .input('#', Items.STICK)
@@ -106,7 +105,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
-                .criterion("has_iron_ingot", conditionsFromItem(ModItems.FIRE_ETHER))
+                .criterion(hasItem(ModBlocks.ICE_ETHER_BLOCK), conditionsFromItem(ModItems.FIRE_ETHER))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_PICKAXE)
                 .input('#', Items.STICK)
@@ -114,7 +113,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
-                .criterion("has_iron_ingot", conditionsFromItem(ModItems.FIRE_ETHER))
+                .criterion(hasItem(ModBlocks.ICE_ETHER_BLOCK), conditionsFromItem(ModItems.FIRE_ETHER))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_HOE)
                 .input('#', Items.STICK)
@@ -122,7 +121,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
-                .criterion("has_iron_ingot", conditionsFromItem(ModItems.FIRE_ETHER))
+                .criterion(hasItem(ModBlocks.ICE_ETHER_BLOCK), conditionsFromItem(ModItems.FIRE_ETHER))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_AXE)
                 .input('#', Items.STICK)
@@ -130,7 +129,15 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
-                .criterion("has_iron_ingot", conditionsFromItem(ModItems.FIRE_ETHER))
+                .criterion(hasItem(ModBlocks.ICE_ETHER_BLOCK), conditionsFromItem(ModItems.FIRE_ETHER))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_PICKAXE_AXE)
+                .input('#', Items.STICK)
+                .input('X', ModItems.FIRE_ETHER)
+                .pattern("XXX")
+                .pattern("X# ")
+                .pattern(" # ")
+                .criterion(hasItem(ModBlocks.ICE_ETHER_BLOCK), conditionsFromItem(ModItems.FIRE_ETHER))
                 .offerTo(exporter);
     }
 }
