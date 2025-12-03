@@ -92,7 +92,45 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING,
                 600, ModItems.RAW_ICE_ETHER, ModItems.ICE_ETHER, 0.35f);
 
-
-
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FIRE_ETHER_SWORD)
+                .input('#', Items.STICK)
+                .input('X', ModItems.FIRE_ETHER)
+                .pattern("X")
+                .pattern("X")
+                .pattern("#")
+                .criterion("has_iron_ingot", conditionsFromItem(ModItems.FIRE_ETHER))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_SHOVEL)
+                .input('#', Items.STICK)
+                .input('X', ModItems.FIRE_ETHER)
+                .pattern("X")
+                .pattern("#")
+                .pattern("#")
+                .criterion("has_iron_ingot", conditionsFromItem(ModItems.FIRE_ETHER))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_PICKAXE)
+                .input('#', Items.STICK)
+                .input('X', ModItems.FIRE_ETHER)
+                .pattern("XXX")
+                .pattern(" # ")
+                .pattern(" # ")
+                .criterion("has_iron_ingot", conditionsFromItem(ModItems.FIRE_ETHER))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_HOE)
+                .input('#', Items.STICK)
+                .input('X', ModItems.FIRE_ETHER)
+                .pattern("XX")
+                .pattern(" #")
+                .pattern(" #")
+                .criterion("has_iron_ingot", conditionsFromItem(ModItems.FIRE_ETHER))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_AXE)
+                .input('#', Items.STICK)
+                .input('X', ModItems.FIRE_ETHER)
+                .pattern("XX")
+                .pattern("X#")
+                .pattern(" #")
+                .criterion("has_iron_ingot", conditionsFromItem(ModItems.FIRE_ETHER))
+                .offerTo(exporter);
     }
 }
