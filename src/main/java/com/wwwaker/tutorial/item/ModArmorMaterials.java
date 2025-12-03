@@ -3,11 +3,9 @@ package com.wwwaker.tutorial.item;
 import com.wwwaker.tutorial.TutorialMod;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.Lazy;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.Util;
 
@@ -15,12 +13,12 @@ import java.util.EnumMap;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements StringIdentifiable, ArmorMaterial {
-    ICE_ETHER("ice_ether", 13, Util.make(new EnumMap(ArmorItem.Type.class), map -> {
-        map.put(ArmorItem.Type.BOOTS, 3);
-        map.put(ArmorItem.Type.LEGGINGS, 6);
-        map.put(ArmorItem.Type.CHESTPLATE, 8);
-        map.put(ArmorItem.Type.HELMET, 3);
-    }), 36, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1.0F, 0.1F, () -> Ingredient.ofItems(ModItems.ICE_ETHER));
+    ICE_ETHER("ice_ether", 11, Util.make(new EnumMap(ArmorItem.Type.class), map -> {
+        map.put(ArmorItem.Type.BOOTS, 2);
+        map.put(ArmorItem.Type.LEGGINGS, 5);
+        map.put(ArmorItem.Type.CHESTPLATE, 6);
+        map.put(ArmorItem.Type.HELMET, 2);
+    }), 36, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1.5F, 0, () -> Ingredient.ofItems(ModItems.ICE_ETHER));
 
     private static final EnumMap<ArmorItem.Type, Integer> BASE_DURABILITY = Util.make(new EnumMap(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 13);

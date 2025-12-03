@@ -1,6 +1,7 @@
 package com.wwwaker.tutorial.item;
 
 import com.wwwaker.tutorial.TutorialMod;
+import com.wwwaker.tutorial.item.custom.ModArmorItem;
 import com.wwwaker.tutorial.item.custom.PickaxeAxeItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -31,7 +32,7 @@ public class ModItems {
 
     public static final Item FIRE_ETHER_PICKAXE_AXE = registerItems("fire_ether_pickaxe_axe", new PickaxeAxeItem(ModToolMaterials.FIRE_ETHER, 3, -3.0F, new Item.Settings()));
 
-    public static final Item ICE_ETHER_HELMET = registerItems("ice_ether_helmet", new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.HELMET, new Item.Settings()));
+    public static final Item ICE_ETHER_HELMET = registerItems("ice_ether_helmet", new ModArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.HELMET, new Item.Settings()));
     public static final Item ICE_ETHER_CHESTPLATE = registerItems("ice_ether_chestplate", new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
     public static final Item ICE_ETHER_LEGGINGS = registerItems("ice_ether_leggings", new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.LEGGINGS, new Item.Settings()));
     public static final Item ICE_ETHER_BOOTS = registerItems("ice_ether_boots", new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.BOOTS, new Item.Settings()));
