@@ -2,6 +2,15 @@
   "replace": false,
   "values": [
     "tutorial-mod:ice_ether_block",
-    "tutorial-mod:ice_ether_ore"
+    "tutorial-mod:ice_ether_ore",
+    "tutorial-mod:ice_ether_stairs",
+    "tutorial-mod:ice_ether_slab",
+    "tutorial-mod:ice_ether_button",
+    "tutorial-mod:ice_ether_pressure_plate",
+    "tutorial-mod:ice_ether_fence",
+    "tutorial-mod:ice_ether_fence_gate",
+    "tutorial-mod:ice_ether_wall",
+    "tutorial-mod:ice_ether_door",
+    "tutorial-mod:ice_ether_trapdoor"
   ]
 }

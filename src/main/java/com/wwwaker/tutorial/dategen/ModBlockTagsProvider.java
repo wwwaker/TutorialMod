@@ -17,8 +17,20 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider{
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.ICE_ETHER_BLOCK)
-                .add(ModBlocks.ICE_ETHER_ORE);
+                .add(
+                        ModBlocks.ICE_ETHER_BLOCK,
+                        ModBlocks.ICE_ETHER_ORE,
+                        ModBlocks.ICE_ETHER_STAIRS,
+                        ModBlocks.ICE_ETHER_SLAB,
+                        ModBlocks.ICE_ETHER_BUTTON,
+                        ModBlocks.ICE_ETHER_PRESSURE_PLATE,
+                        ModBlocks.ICE_ETHER_FENCE,
+                        ModBlocks.ICE_ETHER_FENCE_GATE,
+                        ModBlocks.ICE_ETHER_WALL,
+                        ModBlocks.ICE_ETHER_DOOR,
+                        ModBlocks.ICE_ETHER_TRAPDOOR
+                );
+
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ICE_ETHER_ORE);
         getOrCreateTagBuilder(ModBlockTags.ETHER_BLOCK)

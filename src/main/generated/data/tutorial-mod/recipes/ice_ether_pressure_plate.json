@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "tutorial-mod:ice_ether_block"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "tutorial-mod:ice_ether_pressure_plate"
+  },
+  "show_notification": true
+}
