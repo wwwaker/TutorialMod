@@ -48,5 +48,8 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModItems.ANTHRACITE, "Anthracite");
 
+        translationBuilder.add("tooltip.tutorial.pickaxe_axe.shift", "This is a item that can be used as a pickaxe and an axe");
+        translationBuilder.add("tooltip.tutorial.pickaxe_axe", "Hold §eSHIFT§r for more information!");
+
     }
 }
