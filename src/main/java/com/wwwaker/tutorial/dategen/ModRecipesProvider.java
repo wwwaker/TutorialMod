@@ -97,7 +97,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
-                .criterion(hasItem(ModBlocks.ICE_ETHER_BLOCK), conditionsFromItem(ModItems.FIRE_ETHER))
+                .criterion(hasItem(ModItems.FIRE_ETHER), conditionsFromItem(ModItems.FIRE_ETHER))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_SHOVEL)
                 .input('#', Items.STICK)
@@ -105,7 +105,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
-                .criterion(hasItem(ModBlocks.ICE_ETHER_BLOCK), conditionsFromItem(ModItems.FIRE_ETHER))
+                .criterion(hasItem(ModItems.FIRE_ETHER), conditionsFromItem(ModItems.FIRE_ETHER))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_PICKAXE)
                 .input('#', Items.STICK)
@@ -113,7 +113,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
-                .criterion(hasItem(ModBlocks.ICE_ETHER_BLOCK), conditionsFromItem(ModItems.FIRE_ETHER))
+                .criterion(hasItem(ModItems.FIRE_ETHER), conditionsFromItem(ModItems.FIRE_ETHER))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_HOE)
                 .input('#', Items.STICK)
@@ -121,7 +121,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
-                .criterion(hasItem(ModBlocks.ICE_ETHER_BLOCK), conditionsFromItem(ModItems.FIRE_ETHER))
+                .criterion(hasItem(ModItems.FIRE_ETHER), conditionsFromItem(ModItems.FIRE_ETHER))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_AXE)
                 .input('#', Items.STICK)
@@ -129,7 +129,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
-                .criterion(hasItem(ModBlocks.ICE_ETHER_BLOCK), conditionsFromItem(ModItems.FIRE_ETHER))
+                .criterion(hasItem(ModItems.FIRE_ETHER), conditionsFromItem(ModItems.FIRE_ETHER))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FIRE_ETHER_PICKAXE_AXE)
                 .input('#', Items.STICK)
@@ -137,7 +137,34 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("XXX")
                 .pattern("X# ")
                 .pattern(" # ")
-                .criterion(hasItem(ModBlocks.ICE_ETHER_BLOCK), conditionsFromItem(ModItems.FIRE_ETHER))
+                .criterion(hasItem(ModItems.FIRE_ETHER), conditionsFromItem(ModItems.FIRE_ETHER))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ICE_ETHER_BOOTS)
+                .input('X', ModItems.ICE_ETHER)
+                .pattern("X X")
+                .pattern("X X")
+                .criterion(hasItem(ModItems.ICE_ETHER), conditionsFromItem(ModItems.ICE_ETHER))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ICE_ETHER_CHESTPLATE)
+                .input('X', ModItems.ICE_ETHER)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .criterion(hasItem(ModItems.ICE_ETHER), conditionsFromItem(ModItems.ICE_ETHER))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ICE_ETHER_HELMET)
+                .input('X', ModItems.ICE_ETHER)
+                .pattern("XXX")
+                .pattern("X X")
+                .criterion(hasItem(ModItems.ICE_ETHER), conditionsFromItem(ModItems.ICE_ETHER))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ICE_ETHER_LEGGINGS)
+                .input('X', ModItems.ICE_ETHER)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .criterion(hasItem(ModItems.ICE_ETHER), conditionsFromItem(ModItems.ICE_ETHER))
                 .offerTo(exporter);
     }
 }

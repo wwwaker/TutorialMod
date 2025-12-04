@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_fire_ether": {
+    "has_ice_ether": {
       "conditions": {
         "items": [
           {
             "items": [
-              "tutorial-mod:fire_ether"
+              "tutorial-mod:ice_ether"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "tutorial-mod:fire_ether_pickaxe_axe"
+        "recipe": "tutorial-mod:ice_ether_leggings"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_fire_ether",
+      "has_ice_ether",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "tutorial-mod:fire_ether_pickaxe_axe"
+      "tutorial-mod:ice_ether_leggings"
     ]
   },
   "sends_telemetry_event": false
