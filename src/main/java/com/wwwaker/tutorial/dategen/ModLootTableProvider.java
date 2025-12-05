@@ -1,6 +1,7 @@
 package com.wwwaker.tutorial.dategen;
 
 import com.wwwaker.tutorial.block.ModBlocks;
+import com.wwwaker.tutorial.block.custom.StrawberryBlock;
 import com.wwwaker.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
@@ -9,11 +10,16 @@ import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
+import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
+
+import javax.swing.plaf.nimbus.State;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public ModLootTableProvider(FabricDataOutput dataOutput) {
@@ -37,6 +43,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ICE_ETHER_TRAPDOOR);
         addDrop(ModBlocks.ICE_ETHER_WALL);
 
+        LootCondition.Builder builder =
+                BlockStatePropertyLootCondition.builder(ModBlocks.STRAWBERRY_CROP)
+                        .properties(StatePredicate.Builder.create().exactMatch(StrawberryBlock.AGE, 5));
+        addDrop(ModBlocks.STRAWBERRY_CROP, cropDrops(ModBlocks.STRAWBERRY_CROP, ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS, builder));
     }
 
 

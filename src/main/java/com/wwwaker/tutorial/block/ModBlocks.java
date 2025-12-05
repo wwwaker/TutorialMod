@@ -1,7 +1,9 @@
 package com.wwwaker.tutorial.block;
 
 import com.wwwaker.tutorial.TutorialMod;
+import com.wwwaker.tutorial.block.custom.StrawberryBlock;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -35,6 +37,8 @@ public class ModBlocks {
     public static final Block ICE_ETHER_TRAPDOOR = register("ice_ether_trapdoor",
             new TrapdoorBlock(AbstractBlock.Settings.copy(ICE_ETHER_BLOCK).nonOpaque(), BlockSetType.STONE));
 
+    public static final Block STRAWBERRY_CROP = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "strawberry_crop"),
+            new StrawberryBlock(AbstractBlock.Settings.create().noCollision().breakInstantly().ticksRandomly().pistonBehavior(PistonBehavior.DESTROY)));
 
     public static Block register(String id, Block block) {
         registerBlockItems(id, block);

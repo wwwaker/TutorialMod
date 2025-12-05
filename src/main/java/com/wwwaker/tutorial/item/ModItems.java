@@ -1,6 +1,7 @@
 package com.wwwaker.tutorial.item;
 
 import com.wwwaker.tutorial.TutorialMod;
+import com.wwwaker.tutorial.block.ModBlocks;
 import com.wwwaker.tutorial.item.custom.ModArmorItem;
 import com.wwwaker.tutorial.item.custom.PickaxeAxeItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -20,7 +21,7 @@ public class ModItems {
     public static final Item CORN = registerItem("corn", new Item(new Item.Settings().food(ModFoodComponents.CORN)));
     public static final Item STRAWBERRY = registerItem("strawberry", new Item(new Item.Settings().food(ModFoodComponents.STRAWBERRY)));
     public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
-
+    public static final Item STRAWBERRY_SEEDS = registerItems("strawberry_seeds", new AliasedBlockItem(ModBlocks.STRAWBERRY_CROP, new Item.Settings()));
     public static final Item ANTHRACITE = registerItem("anthracite", new Item(new Item.Settings()));
 
     public static final Item FIRE_ETHER = registerItems("fire_ether", new Item(new Item.Settings()));

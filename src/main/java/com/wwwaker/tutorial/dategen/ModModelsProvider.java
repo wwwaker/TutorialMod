@@ -2,6 +2,7 @@ package com.wwwaker.tutorial.dategen;
 
 import com.wwwaker.tutorial.block.ModBlockFamilies;
 import com.wwwaker.tutorial.block.ModBlocks;
+import com.wwwaker.tutorial.block.custom.StrawberryBlock;
 import com.wwwaker.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -28,6 +29,7 @@ public class ModModelsProvider extends FabricModelProvider {
 //        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ICE_ETHER_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_ORE);
+        blockStateModelGenerator.registerCrop(ModBlocks.STRAWBERRY_CROP, StrawberryBlock.AGE, 0, 1, 2, 3, 4, 5);
 
     }
 
