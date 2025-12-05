@@ -18,7 +18,7 @@ public class ModItems {
     public static final Item RAW_ICE_ETHER = registerItem("raw_ice_ether", new Item(new Item.Settings()));
     public static final Item CARDBOARD = registerItem("material/cardboard", new Item(new Item.Settings()));
 
-    public static final Item CORN = registerItem("corn", new Item(new Item.Settings().food(ModFoodComponents.CORN)));
+    public static final Item CORN = registerItem("corn", new AliasedBlockItem(ModBlocks.CORN_CROP,new Item.Settings().food(ModFoodComponents.CORN)));
     public static final Item STRAWBERRY = registerItem("strawberry", new Item(new Item.Settings().food(ModFoodComponents.STRAWBERRY)));
     public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
     public static final Item STRAWBERRY_SEEDS = registerItems("strawberry_seeds", new AliasedBlockItem(ModBlocks.STRAWBERRY_CROP, new Item.Settings()));

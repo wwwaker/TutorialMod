@@ -2,15 +2,16 @@ package com.wwwaker.tutorial.dategen;
 
 import com.wwwaker.tutorial.block.ModBlockFamilies;
 import com.wwwaker.tutorial.block.ModBlocks;
+import com.wwwaker.tutorial.block.custom.CornBlock;
 import com.wwwaker.tutorial.block.custom.StrawberryBlock;
 import com.wwwaker.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.block.Blocks;
+import net.minecraft.data.client.*;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.state.property.Properties;
 
 public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output) {
@@ -31,6 +32,17 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_ORE);
         blockStateModelGenerator.registerCrop(ModBlocks.STRAWBERRY_CROP, StrawberryBlock.AGE, 0, 1, 2, 3, 4, 5);
 
+        blockStateModelGenerator.blockStateCollector
+                .accept(VariantsBlockStateSupplier.create(ModBlocks.CORN_CROP)
+                        .coordinate(
+                                BlockStateVariantMap.create(CornBlock.AGE)
+                                        .register(stage -> BlockStateVariant.create()
+                                                .put(VariantSettings.MODEL,
+                                                        blockStateModelGenerator.createSubModel(ModBlocks.CORN_CROP, "_stage" + stage,
+                                                                Models.CROSS, TextureMap::cross))
+                                        )
+                        )
+                );
     }
 
     @Override

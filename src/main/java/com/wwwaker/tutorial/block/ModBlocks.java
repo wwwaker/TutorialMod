@@ -1,6 +1,7 @@
 package com.wwwaker.tutorial.block;
 
 import com.wwwaker.tutorial.TutorialMod;
+import com.wwwaker.tutorial.block.custom.CornBlock;
 import com.wwwaker.tutorial.block.custom.StrawberryBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -39,6 +40,8 @@ public class ModBlocks {
 
     public static final Block STRAWBERRY_CROP = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "strawberry_crop"),
             new StrawberryBlock(AbstractBlock.Settings.create().noCollision().breakInstantly().ticksRandomly().pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block CORN_CROP = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "corn_crop"),
+            new CornBlock(AbstractBlock.Settings.create().noCollision().breakInstantly().ticksRandomly().pistonBehavior(PistonBehavior.DESTROY)));
 
     public static Block register(String id, Block block) {
         registerBlockItems(id, block);

@@ -1,14 +1,17 @@
 package com.wwwaker.tutorial.dategen;
 
 import com.wwwaker.tutorial.block.ModBlocks;
+import com.wwwaker.tutorial.block.custom.CornBlock;
 import com.wwwaker.tutorial.block.custom.StrawberryBlock;
 import com.wwwaker.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.LootCondition;
@@ -47,6 +50,24 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 BlockStatePropertyLootCondition.builder(ModBlocks.STRAWBERRY_CROP)
                         .properties(StatePredicate.Builder.create().exactMatch(StrawberryBlock.AGE, 5));
         addDrop(ModBlocks.STRAWBERRY_CROP, cropDrops(ModBlocks.STRAWBERRY_CROP, ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS, builder));
+
+        LootCondition.Builder builder2 =
+                BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP)
+                        .properties(StatePredicate.Builder.create().exactMatch(CornBlock.AGE, 8));
+        addDrop(
+                ModBlocks.CORN_CROP,
+                applyExplosionDecay(
+                        ModBlocks.CORN_CROP,
+                        LootTable.builder()
+                                .pool(LootPool.builder().with(ItemEntry.builder(ModItems.CORN)))
+                                .pool(
+                                        LootPool.builder()
+                                                .conditionally(builder2)
+                                                .with(ItemEntry.builder(ModItems.CORN).apply(ApplyBonusLootFunction.binomialWithBonusCount(Enchantments.FORTUNE, 0.5714286F, 3)))
+                                )
+                )
+        );
+
     }
 
 
