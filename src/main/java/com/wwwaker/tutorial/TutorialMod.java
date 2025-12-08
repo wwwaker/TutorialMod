@@ -3,6 +3,7 @@ package com.wwwaker.tutorial;
 import com.wwwaker.tutorial.block.ModBlocks;
 import com.wwwaker.tutorial.item.ModItemGroups;
 import com.wwwaker.tutorial.item.ModItems;
+import com.wwwaker.tutorial.sound.ModSoundEvents;
 import com.wwwaker.tutorial.villager.ModTrades;
 import com.wwwaker.tutorial.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
@@ -31,6 +32,7 @@ public class TutorialMod implements ModInitializer {
 
 		ModTrades.registerTrades();
 		ModVillagers.registerModVillagers();
+		ModSoundEvents.registerSounds();
 
 //		FuelRegistry.INSTANCE.add(ModItems.ANTHRACITE, 1600);
 

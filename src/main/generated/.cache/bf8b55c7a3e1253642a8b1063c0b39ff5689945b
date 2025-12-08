@@ -1,4 +1,4 @@
-// 1.20.1	2025-12-08T15:33:02.1051111	Tutorial Mod/Model Definitions
+// 1.20.1	2025-12-08T16:44:50.702579	Tutorial Mod/Model Definitions
 e9f870f35f69f1c3e667a4e33c68cdc38ef208f0 assets\tutorial-mod\models\item\fire_ether_sword.json
 68f0b65923adf0dd1245cb7fa1fe4c30bfe90a4e assets\tutorial-mod\models\block\strawberry_crop_stage0.json
 50529c4e57c9d6970bd7df1a2eb9bc18e06b85bf assets\tutorial-mod\models\item\ice_ether_block.json
@@ -89,8 +89,8 @@ e374cac304e4ce5253bd970f414e2b5cdc57032f assets\tutorial-mod\models\item\ice_eth
 4a4b3194c0e743aff2fe6e1295b0c18e604aebba assets\tutorial-mod\models\item\ice_ether_leggings_lapis_trim.json
 bd6917e7b89e735927b65975ae5f0f23d9e4936e assets\tutorial-mod\models\block\ice_ether_trapdoor_bottom.json
 2e39d95fcfa6060d6bd5cb800e840060143c3c03 assets\tutorial-mod\models\block\strawberry_crop_stage4.json
-69d21193197d619a20af14c07163f2d666d205a2 assets\tutorial-mod\models\item\ice_ether_leggings_copper_trim.json
 79e52fac934f266730016417877b37dba6dd2661 assets\tutorial-mod\models\block\ice_ether_door_bottom_left.json
+69d21193197d619a20af14c07163f2d666d205a2 assets\tutorial-mod\models\item\ice_ether_leggings_copper_trim.json
 b961d5ae14b292af46a546a376d997d116459e7f assets\tutorial-mod\models\block\ice_ether_slab.json
 6eed4dc3016d4b17e28c6f098fc4cac3302b10ea assets\tutorial-mod\blockstates\ice_ether_stairs.json
 61dc6d16cbc72351e8d483d90bfc41ecd18ffc2d assets\tutorial-mod\models\item\raw_ice_ether_block.json
@@ -116,8 +116,8 @@ ec3be4526332ac8398a19b9895f6e6eb0d889528 assets\tutorial-mod\models\block\corn_c
 9fcf77a7723ab41b782db4957f28bcbf99dc48dc assets\tutorial-mod\models\item\cheese.json
 6041479a77a338c9b603163d7620324fa3400478 assets\tutorial-mod\models\block\strawberry_crop_stage2.json
 2e59c0878400f13b75f4c427428b71f7e06f148b assets\tutorial-mod\models\block\ice_ether_stairs_inner.json
-357376a7d0a8587971bc48dce76a9ade5a0e222a assets\tutorial-mod\models\item\ice_ether_slab.json
 f9fb1562ace456eef64f6f2091cf6a12232d642c assets\tutorial-mod\models\block\ice_ether_block.json
+357376a7d0a8587971bc48dce76a9ade5a0e222a assets\tutorial-mod\models\item\ice_ether_slab.json
 01a385a1df97b7ee65cb6e20fab521549cac6a82 assets\tutorial-mod\models\block\ice_ether_pressure_plate_down.json
 800a4c82cd814353f4d2ea08411a61e3522f551a assets\tutorial-mod\models\block\ice_ether_button.json
 abfc1ae2daf3a295b82697643f6e990559c9302d assets\tutorial-mod\blockstates\raw_ice_ether_block.json

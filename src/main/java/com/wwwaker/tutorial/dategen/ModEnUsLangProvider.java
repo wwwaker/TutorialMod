@@ -61,5 +61,12 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add("entity.minecraft.villager.ice_ether_master", "Ice Ether Master");
 
+        translationBuilder.add("sound.tutorial-mod.test", "Test");
+        translationBuilder.add("sound.tutorial-mod.block_break", "Block Break");
+        translationBuilder.add("sound.tutorial-mod.block_place", "Block Place");
+        translationBuilder.add("sound.tutorial-mod.block_step", "Block Step");
+        translationBuilder.add("sound.tutorial-mod.block_hit", "Block Hit");
+        translationBuilder.add("sound.tutorial-mod.block_fall", "Block Fall");
+
     }
 }

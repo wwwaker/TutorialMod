@@ -3,6 +3,7 @@ package com.wwwaker.tutorial.block;
 import com.wwwaker.tutorial.TutorialMod;
 import com.wwwaker.tutorial.block.custom.CornBlock;
 import com.wwwaker.tutorial.block.custom.StrawberryBlock;
+import com.wwwaker.tutorial.sound.ModSoundEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
@@ -13,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block ICE_ETHER_BLOCK = register("ice_ether_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE).nonOpaque()));
+    public static final Block ICE_ETHER_BLOCK = register("ice_ether_block", new Block(AbstractBlock.Settings.copy(Blocks.STONE).sounds(ModSoundEvents.BLOCK_SOUND_GROUP).nonOpaque()));
     public static final Block RAW_ICE_ETHER_BLOCK = register("raw_ice_ether_block",
             new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f)));
     public static final Block ICE_ETHER_ORE = register("ice_ether_ore",
