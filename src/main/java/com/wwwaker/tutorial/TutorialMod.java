@@ -4,6 +4,7 @@ import com.wwwaker.tutorial.block.ModBlocks;
 import com.wwwaker.tutorial.item.ModItemGroups;
 import com.wwwaker.tutorial.item.ModItems;
 import com.wwwaker.tutorial.villager.ModTrades;
+import com.wwwaker.tutorial.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -29,6 +30,7 @@ public class TutorialMod implements ModInitializer {
 		ModItemGroups.registerGroups();
 
 		ModTrades.registerTrades();
+		ModVillagers.registerModVillagers();
 
 //		FuelRegistry.INSTANCE.add(ModItems.ANTHRACITE, 1600);
 

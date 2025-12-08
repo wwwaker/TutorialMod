@@ -59,5 +59,7 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add("tooltip.tutorial.pickaxe_axe.shift", "This is a item that can be used as a pickaxe and an axe");
         translationBuilder.add("tooltip.tutorial.pickaxe_axe", "Hold §eSHIFT§r for more information!");
 
+        translationBuilder.add("entity.minecraft.villager.ice_ether_master", "Ice Ether Master");
+
     }
 }
