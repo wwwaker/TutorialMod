@@ -4,6 +4,7 @@ import com.wwwaker.tutorial.TutorialMod;
 import com.wwwaker.tutorial.block.ModBlocks;
 import com.wwwaker.tutorial.item.custom.ModArmorItem;
 import com.wwwaker.tutorial.item.custom.PickaxeAxeItem;
+import com.wwwaker.tutorial.sound.ModSoundEvents;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -39,6 +40,8 @@ public class ModItems {
     public static final Item ICE_ETHER_BOOTS = registerItems("ice_ether_boots", new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.BOOTS, new Item.Settings()));
     public static final Item ICE_ETHER_HORSE_ARMOR = registerItems("ice_ether_horse_armor", new HorseArmorItem(8, "ice_ether", new Item.Settings().maxCount(1)));
 
+    public static final Item A_MOMENT_APART_MUSIC_DISC = registerItems("a_moment_apart_music_disc",
+            new MusicDiscItem(15, ModSoundEvents.A_MOMENT_APART_MUSIC_DISC, new Item.Settings().maxCount(1), 234));
 
     public static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM, RegistryKey.of(Registries.ITEM.getKey(), new Identifier(TutorialMod.MOD_ID, id)), item);
