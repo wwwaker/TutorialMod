@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "tag": "minecraft:stone_tool_materials"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X# ",
+    " # "
+  ],
+  "result": {
+    "item": "tutorial-mod:stone_pickaxe_axe"
+  },
+  "show_notification": true
+}

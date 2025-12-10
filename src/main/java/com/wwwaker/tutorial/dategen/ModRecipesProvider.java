@@ -14,6 +14,8 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
@@ -139,6 +141,47 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern(" # ")
                 .criterion(hasItem(ModItems.FIRE_ETHER), conditionsFromItem(ModItems.FIRE_ETHER))
                 .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.WOODEN_PICKAXE_AXE)
+                .input('#', Items.STICK)
+                .input('X', ItemTags.PLANKS)
+                .pattern("XXX")
+                .pattern("X# ")
+                .pattern(" # ")
+                .criterion("has_stick", conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STONE_PICKAXE_AXE)
+                .input('#', Items.STICK)
+                .input('X', ItemTags.STONE_TOOL_MATERIALS)
+                .pattern("XXX")
+                .pattern("X# ")
+                .pattern(" # ")
+                .criterion("has_cobblestone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.IRON_PICKAXE_AXE)
+                .input('#', Items.STICK)
+                .input('X', Items.IRON_INGOT)
+                .pattern("XXX")
+                .pattern("X# ")
+                .pattern(" # ")
+                .criterion("has_iron_ingot", conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.GOLDEN_PICKAXE_AXE)
+                .input('#', Items.STICK)
+                .input('X', Items.GOLD_INGOT)
+                .pattern("XXX")
+                .pattern("X# ")
+                .pattern(" # ")
+                .criterion("has_gold_ingot", conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DIAMOND_PICKAXE_AXE)
+                .input('#', Items.STICK)
+                .input('X', Items.DIAMOND)
+                .pattern("XXX")
+                .pattern("X# ")
+                .pattern(" # ")
+                .criterion("has_diamond", conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter);
+        offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_PICKAXE_AXE, RecipeCategory.TOOLS, ModItems.NETHERITE_PICKAXE_AXE);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ICE_ETHER_BOOTS)
                 .input('X', ModItems.ICE_ETHER)

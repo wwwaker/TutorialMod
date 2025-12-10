@@ -38,6 +38,12 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.FIRE_ETHER_AXE, "Fire Ether Axe");
         translationBuilder.add(ModItems.FIRE_ETHER_HOE, "Fire Ether Hoe");
         translationBuilder.add(ModItems.FIRE_ETHER_PICKAXE_AXE, "Fire Ether Pickaxe Axe");
+        translationBuilder.add(ModItems.WOODEN_PICKAXE_AXE, "Wooden Pickaxe Axe");
+        translationBuilder.add(ModItems.STONE_PICKAXE_AXE, "Stone Pickaxe Axe");
+        translationBuilder.add(ModItems.IRON_PICKAXE_AXE, "Iron Pickaxe Axe");
+        translationBuilder.add(ModItems.GOLDEN_PICKAXE_AXE, "Golden Pickaxe Axe");
+        translationBuilder.add(ModItems.DIAMOND_PICKAXE_AXE, "Diamond Pickaxe Axe");
+        translationBuilder.add(ModItems.NETHERITE_PICKAXE_AXE, "Netherite Pickaxe Axe");
 
         translationBuilder.add(ModItems.ICE_ETHER_HELMET, "Ice Ether Helmet");
         translationBuilder.add(ModItems.ICE_ETHER_CHESTPLATE, "Ice Ether Chestplate");

@@ -33,6 +33,12 @@ public class ModItems {
     public static final Item FIRE_ETHER_HOE = registerItems("fire_ether_hoe", new HoeItem(ModToolMaterials.FIRE_ETHER, -1, 0.0F, new Item.Settings()));
 
     public static final Item FIRE_ETHER_PICKAXE_AXE = registerItems("fire_ether_pickaxe_axe", new PickaxeAxeItem(ModToolMaterials.FIRE_ETHER, 3, -3.0F, new Item.Settings()));
+    public static final Item WOODEN_PICKAXE_AXE = registerItems("wooden_pickaxe_axe", new PickaxeAxeItem(ToolMaterials.WOOD, 3, -3.0F, new Item.Settings()));
+    public static final Item STONE_PICKAXE_AXE = registerItems("stone_pickaxe_axe", new PickaxeAxeItem(ToolMaterials.STONE, 3, -3.0F, new Item.Settings()));
+    public static final Item IRON_PICKAXE_AXE = registerItems("iron_pickaxe_axe", new PickaxeAxeItem(ToolMaterials.IRON, 3, -3.0F, new Item.Settings()));
+    public static final Item GOLDEN_PICKAXE_AXE = registerItems("golden_pickaxe_axe", new PickaxeAxeItem(ToolMaterials.GOLD, 3, -3.0F, new Item.Settings()));
+    public static final Item DIAMOND_PICKAXE_AXE = registerItems("diamond_pickaxe_axe", new PickaxeAxeItem(ToolMaterials.DIAMOND, 3, -3.0F, new Item.Settings()));
+    public static final Item NETHERITE_PICKAXE_AXE = registerItems("netherite_pickaxe_axe", new PickaxeAxeItem(ToolMaterials.NETHERITE, 3, -3.0F, new Item.Settings()));
 
     public static final Item ICE_ETHER_HELMET = registerItems("ice_ether_helmet", new ModArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.HELMET, new Item.Settings()));
     public static final Item ICE_ETHER_CHESTPLATE = registerItems("ice_ether_chestplate", new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.CHESTPLATE, new Item.Settings()));

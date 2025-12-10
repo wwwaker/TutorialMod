@@ -52,6 +52,12 @@ public class ModItemGroups {
                         entries.add(ModItems.FIRE_ETHER_AXE);
                         entries.add(ModItems.FIRE_ETHER_HOE);
                         entries.add(ModItems.FIRE_ETHER_PICKAXE_AXE);
+                        entries.add(ModItems.WOODEN_PICKAXE_AXE);
+                        entries.add(ModItems.STONE_PICKAXE_AXE);
+                        entries.add(ModItems.IRON_PICKAXE_AXE);
+                        entries.add(ModItems.GOLDEN_PICKAXE_AXE);
+                        entries.add(ModItems.DIAMOND_PICKAXE_AXE);
+                        entries.add(ModItems.NETHERITE_PICKAXE_AXE);
                         entries.add(ModItems.ICE_ETHER_HELMET);
                         entries.add(ModItems.ICE_ETHER_CHESTPLATE);
                         entries.add(ModItems.ICE_ETHER_LEGGINGS);

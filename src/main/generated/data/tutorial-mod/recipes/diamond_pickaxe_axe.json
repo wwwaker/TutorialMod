@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X# ",
+    " # "
+  ],
+  "result": {
+    "item": "tutorial-mod:diamond_pickaxe_axe"
+  },
+  "show_notification": true
+}
