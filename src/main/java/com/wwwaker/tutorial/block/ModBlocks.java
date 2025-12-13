@@ -1,10 +1,7 @@
 package com.wwwaker.tutorial.block;
 
 import com.wwwaker.tutorial.TutorialMod;
-import com.wwwaker.tutorial.block.custom.CornBlock;
-import com.wwwaker.tutorial.block.custom.LampBlock;
-import com.wwwaker.tutorial.block.custom.SimpleOrangeClock;
-import com.wwwaker.tutorial.block.custom.StrawberryBlock;
+import com.wwwaker.tutorial.block.custom.*;
 import com.wwwaker.tutorial.sound.ModSoundEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -52,6 +49,9 @@ public class ModBlocks {
 
     public static final Block LAMP_BLOCK = register("lamp_block",
             new LampBlock(AbstractBlock.Settings.create().strength(2.0f, 6.0f).nonOpaque()));
+
+    public static final Block SIMPLE_CABINET = register("simple_cabinet",
+            new SimpleCabinet(AbstractBlock.Settings.create().strength(2.0f, 6.0f).nonOpaque(), ()->ModBlockEntities.SIMPLE_CABINET));
 
     public static Block register(String id, Block block) {
         registerBlockItems(id, block);

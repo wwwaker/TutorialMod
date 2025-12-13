@@ -80,5 +80,8 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.ORANGE_NIGHTSTAND, "Orange Nightstand");
         translationBuilder.add(ModBlocks.SIMPLE_ORANGE_CLOCK, "Simple Orange Clock");
         translationBuilder.add(ModBlocks.LAMP_BLOCK, "Lamp Block");
+
+        translationBuilder.add(ModBlocks.SIMPLE_CABINET, "Simple Cabinet");
+        translationBuilder.add("container.simple_cabinet", "Simple Cabinet");
     }
 }

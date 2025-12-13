@@ -69,6 +69,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ORANGE_NIGHTSTAND);
                         entries.add(ModBlocks.SIMPLE_ORANGE_CLOCK);
                         entries.add(ModBlocks.LAMP_BLOCK);
+                        entries.add(ModBlocks.SIMPLE_CABINET);
                     }).build());
 
     public static void registerGroups(){
