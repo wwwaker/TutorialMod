@@ -7,11 +7,9 @@ import com.wwwaker.tutorial.block.custom.StrawberryBlock;
 import com.wwwaker.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.state.property.Properties;
 
 public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output) {
@@ -46,6 +44,7 @@ public class ModModelsProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleState(ModBlocks.ORANGE_NIGHTSTAND);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.SIMPLE_ORANGE_CLOCK);
+        blockStateModelGenerator.registerSimpleState(ModBlocks.LAMP_BLOCK);
     }
 
     @Override
