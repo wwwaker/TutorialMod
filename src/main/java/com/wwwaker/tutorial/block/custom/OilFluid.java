@@ -50,11 +50,6 @@ public class OilFluid extends ModFluid {
         }
 
         @Override
-        public boolean isStill(FluidState state) {
-            return false;
-        }
-
-        @Override
         public int getLevel(FluidState state) {
             return state.get(LEVEL);
         }
