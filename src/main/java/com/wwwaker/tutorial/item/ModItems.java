@@ -2,6 +2,7 @@ package com.wwwaker.tutorial.item;
 
 import com.wwwaker.tutorial.TutorialMod;
 import com.wwwaker.tutorial.block.ModBlocks;
+import com.wwwaker.tutorial.block.ModFluids;
 import com.wwwaker.tutorial.item.custom.ModArmorItem;
 import com.wwwaker.tutorial.item.custom.PickaxeAxeItem;
 import com.wwwaker.tutorial.sound.ModSoundEvents;
@@ -50,6 +51,9 @@ public class ModItems {
             new MusicDiscItem(15, ModSoundEvents.A_MOMENT_APART_MUSIC_DISC, new Item.Settings().maxCount(1), 234));
 
     public static final Item BASEBALL_BAT = registerItems("baseball_bat", new Item(new Item.Settings()));
+
+    public static final Item Oil_Bucket = registerItems("oil_bucket",
+            new BucketItem(ModFluids.Oil, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
     public static Item registerItems(String id, Item item) {
         return Registry.register(Registries.ITEM, RegistryKey.of(Registries.ITEM.getKey(), new Identifier(TutorialMod.MOD_ID, id)), item);

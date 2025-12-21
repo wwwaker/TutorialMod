@@ -1,4 +1,4 @@
-// 1.20.1	2025-12-13T11:36:03.8971795	Tutorial Mod/Model Definitions
+// 1.20.1	2025-12-21T20:32:04.2281338	Tutorial Mod/Model Definitions
 e9f870f35f69f1c3e667a4e33c68cdc38ef208f0 assets\tutorial-mod\models\item\fire_ether_sword.json
 68f0b65923adf0dd1245cb7fa1fe4c30bfe90a4e assets\tutorial-mod\models\block\strawberry_crop_stage0.json
 50529c4e57c9d6970bd7df1a2eb9bc18e06b85bf assets\tutorial-mod\models\item\ice_ether_block.json
@@ -47,6 +47,7 @@ c0082e6ceb0299236b792f2d02ee8cf4992429ad assets\tutorial-mod\models\item\ice_eth
 5a04486aadac412ee4ae682318fefb301453d830 assets\tutorial-mod\models\item\ice_ether_boots_copper_trim.json
 90a982fac4d37570e10c59c92b40388cc949e884 assets\tutorial-mod\models\block\ice_ether_door_top_left_open.json
 4cc12f06e414dabad8b2b8e56a105f13f6de62ea assets\tutorial-mod\models\item\corn.json
+b4aff51148f0168f88eaa9df309cdf48f84d2441 assets\tutorial-mod\models\item\oil_bucket.json
 2fc8fc14107af61c9b50d138d717edba71a69db9 assets\tutorial-mod\models\block\ice_ether_trapdoor_open.json
 821827fdc82ca3dd1139350c0221d77ca3eb42c6 assets\tutorial-mod\models\item\a_moment_apart_music_disc.json
 19c719854158fadde19399a0b39c45cb45205cc4 assets\tutorial-mod\models\item\ice_ether_leggings_netherite_trim.json

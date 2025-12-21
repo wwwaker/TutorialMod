@@ -53,6 +53,9 @@ public class ModBlocks {
     public static final Block SIMPLE_CABINET = register("simple_cabinet",
             new SimpleCabinet(AbstractBlock.Settings.create().strength(2.0f, 6.0f).nonOpaque(), ()->ModBlockEntities.SIMPLE_CABINET));
 
+    public static final Block Oil = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "oil"),
+            new FluidBlock(ModFluids.Oil, AbstractBlock.Settings.copy(Blocks.WATER)));
+
     public static Block register(String id, Block block) {
         registerBlockItems(id, block);
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, id), block);

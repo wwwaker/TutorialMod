@@ -81,6 +81,6 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ICE_ETHER_HORSE_ARMOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.A_MOMENT_APART_MUSIC_DISC, Models.GENERATED);
 
-
+        itemModelGenerator.register(ModItems.Oil_Bucket, Models.GENERATED);
     }
 }

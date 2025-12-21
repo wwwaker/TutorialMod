@@ -2,6 +2,7 @@ package com.wwwaker.tutorial;
 
 import com.wwwaker.tutorial.block.ModBlockEntities;
 import com.wwwaker.tutorial.block.ModBlocks;
+import com.wwwaker.tutorial.block.ModFluids;
 import com.wwwaker.tutorial.item.ModItemGroups;
 import com.wwwaker.tutorial.item.ModItems;
 import com.wwwaker.tutorial.sound.ModSoundEvents;
@@ -35,6 +36,7 @@ public class TutorialMod implements ModInitializer {
 		ModVillagers.registerModVillagers();
 		ModSoundEvents.registerSounds();
 		ModBlockEntities.registerModBlockEntities();
+		ModFluids.registerModFluid();
 
 //		FuelRegistry.INSTANCE.add(ModItems.ANTHRACITE, 1600);
 
