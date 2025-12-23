@@ -1,5 +1,6 @@
 package com.wwwaker.tutorial.dategen;
 
+import com.wwwaker.tutorial.block.ModBlocks;
 import com.wwwaker.tutorial.item.ModItems;
 import com.wwwaker.tutorial.tag.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -30,5 +31,22 @@ public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider {
                 );
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
                 .add(ModItems.A_MOMENT_APART_MUSIC_DISC);
+
+        getOrCreateTagBuilder(ItemTags.PLANKS).add(ModBlocks.ICE_ETHER_PLANKS.asItem());
+        getOrCreateTagBuilder(ItemTags.LOGS)
+                .add(
+                        ModBlocks.ICE_ETHER_LOG.asItem(),
+                        ModBlocks.ICE_ETHER_WOOD.asItem(),
+                        ModBlocks.STRIPPED_ICE_ETHER_LOG.asItem(),
+                        ModBlocks.STRIPPED_ICE_ETHER_WOOD.asItem()
+                );
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(
+                        ModBlocks.ICE_ETHER_LOG.asItem(),
+                        ModBlocks.ICE_ETHER_WOOD.asItem(),
+                        ModBlocks.STRIPPED_ICE_ETHER_LOG.asItem(),
+                        ModBlocks.STRIPPED_ICE_ETHER_WOOD.asItem()
+                );
+
     }
 }

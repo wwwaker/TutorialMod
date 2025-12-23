@@ -54,5 +54,11 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider{
         getOrCreateTagBuilder(ModBlockTags.PICKAXE_AXE)
                 .forceAddTag(BlockTags.PICKAXE_MINEABLE)
                 .forceAddTag(BlockTags.AXE_MINEABLE);
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.ICE_ETHER_LOG)
+                .add(ModBlocks.ICE_ETHER_WOOD)
+                .add(ModBlocks.STRIPPED_ICE_ETHER_LOG)
+                .add(ModBlocks.STRIPPED_ICE_ETHER_WOOD);
     }
 }

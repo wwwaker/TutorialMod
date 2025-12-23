@@ -24,7 +24,7 @@ public class OilFluid extends ModFluid {
 
     @Override
     public Item getBucketItem() {
-        return ModItems.Oil_Bucket;
+        return ModItems.OIL_BUCKET;
     }
 
     @Override

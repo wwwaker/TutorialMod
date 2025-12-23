@@ -52,7 +52,7 @@ public class ModItems {
 
     public static final Item BASEBALL_BAT = registerItems("baseball_bat", new Item(new Item.Settings()));
 
-    public static final Item Oil_Bucket = registerItems("oil_bucket",
+    public static final Item OIL_BUCKET = registerItems("oil_bucket",
             new BucketItem(ModFluids.Oil, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
     public static Item registerItems(String id, Item item) {

@@ -56,6 +56,19 @@ public class ModBlocks {
     public static final Block Oil = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "oil"),
             new FluidBlock(ModFluids.Oil, AbstractBlock.Settings.copy(Blocks.WATER)));
 
+    public static final Block ICE_ETHER_LOG = register("ice_ether_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+    public static final Block ICE_ETHER_WOOD = register("ice_ether_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+    public static final Block STRIPPED_ICE_ETHER_LOG = register("stripped_ice_ether_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+    public static final Block STRIPPED_ICE_ETHER_WOOD = register("stripped_ice_ether_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+    public static final Block ICE_ETHER_LEAVES = register("ice_ether_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block ICE_ETHER_PLANKS = register("ice_ether_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+
     public static Block register(String id, Block block) {
         registerBlockItems(id, block);
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, id), block);
