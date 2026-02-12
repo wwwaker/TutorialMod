@@ -1,4 +1,4 @@
-// 1.20.1	2025-12-23T13:04:44.546281	Tutorial Mod/Model Definitions
+// 1.20.1	2026-02-12T14:09:06.6430317	Tutorial Mod/Model Definitions
 e9f870f35f69f1c3e667a4e33c68cdc38ef208f0 assets\tutorial-mod\models\item\fire_ether_sword.json
 68f0b65923adf0dd1245cb7fa1fe4c30bfe90a4e assets\tutorial-mod\models\block\strawberry_crop_stage0.json
 7e8e771e63351d9c878d0bb85fafc20385126353 assets\tutorial-mod\models\block\ice_ether_log_horizontal.json
@@ -19,8 +19,8 @@ bac09f25e52e7de8ae6d7c41e06491d13f8f543a assets\tutorial-mod\models\item\lamp_bl
 135c97d96acae0a6e7645613dad1e48a0f2dd214 assets\tutorial-mod\models\item\ice_ether_leggings_amethyst_trim.json
 d39b98841f707c629c832a14c5fad8a19d83865d assets\tutorial-mod\models\block\ice_ether_wall_inventory.json
 80125078958a222c91912406d96617236c84e537 assets\tutorial-mod\models\item\strawberry.json
-ac819df48da15594bfb3e5c62e57d47c63f09bfd assets\tutorial-mod\models\item\ice_ether_chestplate_diamond_trim.json
 6b683948507b875aa5c84d62d0590647203833f7 assets\tutorial-mod\models\block\ice_ether_ore.json
+ac819df48da15594bfb3e5c62e57d47c63f09bfd assets\tutorial-mod\models\item\ice_ether_chestplate_diamond_trim.json
 14cf9db70fced8719bdf31a92a13cbc0c5a6ea9d assets\tutorial-mod\models\block\ice_ether_fence_side.json
 8599906305f88eb3409647f6b9f611c84f5c5068 assets\tutorial-mod\blockstates\simple_orange_clock.json
 251a72691c5701664c7eb95df3f862d86f6a828b assets\tutorial-mod\models\item\ice_ether_chestplate_iron_trim.json
@@ -33,11 +33,12 @@ b75310cd5036e1675b8d65393c5f197215460ac9 assets\tutorial-mod\blockstates\ice_eth
 c82e4834ce55a94e64dcc0ca78d4f55260db2f1f assets\tutorial-mod\models\item\strawberry_seeds.json
 41e62a0a2cdcc6f383fb8b6636e122cc55d68519 assets\tutorial-mod\models\item\ice_ether_chestplate_emerald_trim.json
 58d6f14b25e5e033e9fdd256ea41f76e86819772 assets\tutorial-mod\models\block\corn_crop_stage3.json
-02a138ed485c0501066ebfb517d805a13731818b assets\tutorial-mod\blockstates\ice_ether_fence_gate.json
 e160d7323aa04a91cf67164b194ae8e2246f7f4c assets\tutorial-mod\blockstates\ice_ether_log.json
+02a138ed485c0501066ebfb517d805a13731818b assets\tutorial-mod\blockstates\ice_ether_fence_gate.json
 05c8a66eb6cbb492866562581292429a4aea9ba2 assets\tutorial-mod\models\item\ice_ether_helmet_netherite_trim.json
 c6248f81482030bf5c67c7bfb23a623e25dd2a33 assets\tutorial-mod\models\item\stripped_ice_ether_wood.json
 7201dd7f70e5cdcee04fd1ab3b0b1248ccf4e72e assets\tutorial-mod\models\block\ice_ether_pressure_plate.json
+c9ca4b62cdfdd06d8ed6a87fc5c94bc7974f637a assets\tutorial-mod\models\item\ice_ether_sign.json
 f982fc8e20e9bb0e7a5e012e5613f0d1fa84adcb assets\tutorial-mod\blockstates\strawberry_crop.json
 353bc67168d7946f48e1abcd53d40ac2b4cc2b49 assets\tutorial-mod\models\block\ice_ether_wood.json
 bbbc6f9698ee513543dd5bb85099b2f4ba1b1ffa assets\tutorial-mod\models\item\fire_ether_hoe.json
@@ -59,9 +60,12 @@ b9b15dc1d1febcadf911d1d93b64be9aaef54999 assets\tutorial-mod\blockstates\ice_eth
 b4aff51148f0168f88eaa9df309cdf48f84d2441 assets\tutorial-mod\models\item\oil_bucket.json
 2fc8fc14107af61c9b50d138d717edba71a69db9 assets\tutorial-mod\models\block\ice_ether_trapdoor_open.json
 821827fdc82ca3dd1139350c0221d77ca3eb42c6 assets\tutorial-mod\models\item\a_moment_apart_music_disc.json
+0c38fd5d668dcaa572c0c4306c2dfdfd28827580 assets\tutorial-mod\blockstates\ice_ether_sign.json
+0c38fd5d668dcaa572c0c4306c2dfdfd28827580 assets\tutorial-mod\blockstates\ice_ether_wall_sign.json
 19c719854158fadde19399a0b39c45cb45205cc4 assets\tutorial-mod\models\item\ice_ether_leggings_netherite_trim.json
 c50edc85b7f2f1d784f4f36fe603544db9e193fe assets\tutorial-mod\models\item\ice_ether_planks.json
 6ed4416c41c92132d97067ffb0856b7ccac23930 assets\tutorial-mod\models\item\ice_ether_trapdoor.json
+11bf568bb566aa7825e5c03d594ac3b4d52a6db1 assets\tutorial-mod\models\item\ice_ether_hanging_sign.json
 b77933bd4d968fa75d2ac17ad469be48ab8e7dc1 assets\tutorial-mod\models\block\ice_ether_door_bottom_right_open.json
 af0e3f8b53fa672f6ed76b4d9b20bed43829c481 assets\tutorial-mod\models\item\ice_ether_boots_netherite_trim.json
 8ac3ebb9d40662e621842524b8f2902143e4a6b2 assets\tutorial-mod\models\item\ice_ether_door.json
@@ -112,8 +116,8 @@ e374cac304e4ce5253bd970f414e2b5cdc57032f assets\tutorial-mod\models\item\ice_eth
 bd6917e7b89e735927b65975ae5f0f23d9e4936e assets\tutorial-mod\models\block\ice_ether_trapdoor_bottom.json
 4bccb5789fc5a1e01eac35d935ea217620ce1cb4 assets\tutorial-mod\blockstates\ice_ether_planks.json
 2e39d95fcfa6060d6bd5cb800e840060143c3c03 assets\tutorial-mod\models\block\strawberry_crop_stage4.json
-79e52fac934f266730016417877b37dba6dd2661 assets\tutorial-mod\models\block\ice_ether_door_bottom_left.json
 bfb654855086be0429caea7d7f3135ecfc7ce9de assets\tutorial-mod\models\block\stripped_ice_ether_wood.json
+79e52fac934f266730016417877b37dba6dd2661 assets\tutorial-mod\models\block\ice_ether_door_bottom_left.json
 69d21193197d619a20af14c07163f2d666d205a2 assets\tutorial-mod\models\item\ice_ether_leggings_copper_trim.json
 b961d5ae14b292af46a546a376d997d116459e7f assets\tutorial-mod\models\block\ice_ether_slab.json
 6eed4dc3016d4b17e28c6f098fc4cac3302b10ea assets\tutorial-mod\blockstates\ice_ether_stairs.json
@@ -137,6 +141,7 @@ dfb375ea3254635460ccacb48c9b215b28a97477 assets\tutorial-mod\models\item\ice_eth
 f460eeeb31b82ad41a3dd1fa87143c5efc062e40 assets\tutorial-mod\models\item\orange_nightstand.json
 a066f27d3c5477b85ec581618cea8e4267460c4e assets\tutorial-mod\models\item\ice_ether_fence.json
 b1b8686c73f71c69c93d45e184dcb11258c1dab8 assets\tutorial-mod\models\block\ice_ether_trapdoor_top.json
+96cd13f0c0105f911e75c0391324019c7cf5923b assets\tutorial-mod\models\block\ice_ether_sign.json
 ce85a8cc562f55f5f9475e9a9d06e3f8f8e0baf5 assets\tutorial-mod\models\item\ice_ether_helmet_diamond_trim.json
 ec3be4526332ac8398a19b9895f6e6eb0d889528 assets\tutorial-mod\models\block\corn_crop_stage5.json
 9fcf77a7723ab41b782db4957f28bcbf99dc48dc assets\tutorial-mod\models\item\cheese.json

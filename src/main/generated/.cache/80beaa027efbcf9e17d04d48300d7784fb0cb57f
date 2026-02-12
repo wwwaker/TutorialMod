@@ -1,9 +1,9 @@
-// 1.20.1	2025-12-23T13:04:44.5482809	Tutorial Mod/Tags for minecraft:block
+// 1.20.1	2026-02-12T14:09:06.6450315	Tutorial Mod/Tags for minecraft:block
 55f5a4bbcae82267bc1efd57aec19719f4fcb9a1 data\minecraft\tags\blocks\walls.json
 ed180172835e3471e176619af394594ecb3836e2 data\minecraft\tags\blocks\logs_that_burn.json
 73acebc2ab98d196a39b287935f9e86a10faeaf5 data\tutorial-mod\tags\blocks\ether_block.json
 8c84863e22587f43f4c36381d21eb135086841be data\minecraft\tags\blocks\mineable\pickaxe.json
 af66e6f42a455aca9eec8b1a0aec35b2689ff37f data\minecraft\tags\blocks\fences.json
 a5ca757615567607138911a00a49b9f5dbd1f37f data\minecraft\tags\blocks\needs_iron_tool.json
-68ef4f3c65fd3184f1d8ea14d400b85ef198803b data\tutorial-mod\tags\blocks\pickaxe_axe.json
 ea022f2d3df0bae64157d862c93f4497882f15bf data\minecraft\tags\blocks\fence_gates.json
+68ef4f3c65fd3184f1d8ea14d400b85ef198803b data\tutorial-mod\tags\blocks\pickaxe_axe.json

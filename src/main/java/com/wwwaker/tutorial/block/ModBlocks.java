@@ -1,5 +1,9 @@
 package com.wwwaker.tutorial.block;
 
+import com.terraformersmc.terraform.sign.block.TerraformHangingSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformWallHangingSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import com.wwwaker.tutorial.TutorialMod;
 import com.wwwaker.tutorial.block.custom.*;
 import com.wwwaker.tutorial.sound.ModSoundEvents;
@@ -68,6 +72,19 @@ public class ModBlocks {
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block ICE_ETHER_PLANKS = register("ice_ether_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+
+    public static final Identifier ICE_ETHER_SIGN_TEXTURE = new Identifier(TutorialMod.MOD_ID, "entity/signs/ice_ether");
+    public static final Identifier ICE_ETHER_HANGING_SIGN_TEXTURE = new Identifier(TutorialMod.MOD_ID, "entity/signs/hanging/ice_ether");
+    public static final Identifier ICE_ETHER_HANGING_SIGN_GUI = new Identifier(TutorialMod.MOD_ID, "textures/gui/hanging_signs/ice_ether");
+
+    public static final Block ICE_ETHER_SIGN = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "ice_ether_sign"),
+            new TerraformSignBlock(ICE_ETHER_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_SIGN)));
+    public static final Block ICE_ETHER_WALL_SIGN = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "ice_ether_wall_sign"),
+            new TerraformWallSignBlock(ICE_ETHER_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN)));
+    public static final Block ICE_ETHER_HANGING_SIGN = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "ice_ether_hanging_sign"),
+            new TerraformHangingSignBlock(ICE_ETHER_HANGING_SIGN_TEXTURE, ICE_ETHER_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN)));
+    public static final Block ICE_ETHER_WALL_HANGING_SIGN = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "ice_ether_wall_hanging_sign"),
+            new TerraformWallHangingSignBlock(ICE_ETHER_HANGING_SIGN_TEXTURE, ICE_ETHER_HANGING_SIGN_GUI, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN)));
 
     public static Block register(String id, Block block) {
         registerBlockItems(id, block);
